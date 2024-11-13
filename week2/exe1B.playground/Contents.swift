@@ -1,3 +1,8 @@
 import UIKit
 
-var greeting = "Hello, playground"
+let speedOfLight:Double
+speedOfLight = 299792458
+
+print("The speed of light = ",speedOfLight,"m/s")
+
+speedOfLight = 1234

@@ -1,9 +1,5 @@
 import UIKit
 
 let shippingAddress:String? = "kk"
-if let result = shippingAddress {
-    print("Shipping to: \(result)")
-}
-else {
-    print("No shipping address provided")
-}
+let result = shippingAddress != nil ? "Shipping to \(shippingAddress!)!" : "No shipping address provided"
+print(result)

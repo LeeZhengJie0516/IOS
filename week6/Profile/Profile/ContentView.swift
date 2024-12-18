@@ -30,6 +30,7 @@ struct ContentView: View {
                 Text("Lee Zheng Jie")
                     .bold()
                     .font(.largeTitle)
+                    .foregroundColor(Color("fontcolor"))
                 
                 Text("SEDSC 2330244")
                     .bold()

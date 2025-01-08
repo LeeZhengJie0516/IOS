@@ -8,11 +8,55 @@
 import SwiftUI
 
 struct ArtistCard: View {
+    var bg:String
+    var name: String
+    var artist: String
+    var button:String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color(bg)
+            
+            Image(artist)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.leading, 200)
+
+            VStack {
+                
+                HStack {
+                    Text(name)
+                        .bold()
+                        .font(.title2)
+                        .padding(.top, 120)
+                        .padding(.leading, 10)
+                        .foregroundStyle(.fontcolor)
+                    Spacer()
+                    HStack {
+
+                        ZStack {
+                            VStack {
+                                Spacer()
+                                Text("View")
+                                    .bold()
+                                    .background(.white)
+                                    .padding(.trailing, 20)
+                                    .padding(.bottom, 10)
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            Spacer()
+                
+        }.cornerRadius(15)
+         .frame(height: 160)
+         .padding()
     }
 }
 
+
 #Preview {
-    ArtistCard()
+    ArtistCard(bg:"color1", name: "Kenshi Yonezu", artist: "yonezu", button: "color2")
 }

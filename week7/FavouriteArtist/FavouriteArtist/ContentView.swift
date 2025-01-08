@@ -25,7 +25,7 @@ struct ContentView: View {
                         .bold()
                         .padding(.leading, -140)
                     
-                    HStack {
+                    ZStack {
                         Color.color1
                             .cornerRadius(15)
                             .overlay(

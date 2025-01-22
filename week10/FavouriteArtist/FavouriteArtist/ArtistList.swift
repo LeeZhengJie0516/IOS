@@ -21,4 +21,3 @@ let Artists = [Artist(name: "Kenshi Yonezu", image: "yonezu", desc: "Kenshi Yone
                Artist(name: "Utada Hikaru", image: "utada", desc: "Utada Hikaru is a Japanese and American singer, songwriter, and producer.", color: "color3", url: "https://www.en.utadahikaru.jp/"),
                Artist(name: "Hozier", image: "hozier", desc: "Hozier is an Irish musician. His music primarily draws from folk, soul and blues, often using religious and literary themes and taking political or social justice stances.", color: "color1", url: "https://hozier.com/"),
                Artist(name: "Yamori", image: "yamori", desc: "Yamorita Keitaro, better know as YAMORI, is a Japanese singer and beatboxer.", color: "color5", url: "https://www.instagram.com/yamorita_keitaro/?hl=en")]
-

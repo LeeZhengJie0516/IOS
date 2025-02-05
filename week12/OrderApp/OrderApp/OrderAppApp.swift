@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct OrderAppApp: App {
@@ -13,5 +14,6 @@ struct OrderAppApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: MenuItem.self)
     }
 }

@@ -13,7 +13,7 @@ struct Day: View {
     var temp:String
     
     var body: some View {
-        VStack {
+        HStack {
             Text(day)
                 .font(.system(size: 16))
                 .foregroundStyle(.white)

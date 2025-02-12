@@ -17,39 +17,42 @@ struct ProfileView: View {
     @State private var confirmPassword = ""
     
     var body: some View {
-        Text("Register page")
-            .font(.title)
-            .bold()
         VStack {
-            HStack {
-                Text("Email")
-                    .frame(width: 150)
-                TextField("Email", text: $email)
-                    .padding()
+            Text("Register page")
+                .font(.title)
+                .bold()
+            VStack {
+                HStack {
+                    Text("Email")
+                        .frame(width: 150)
+                    TextField("Email", text: $email)
+                        .padding()
+                }
+                
+                HStack {
+                    Text("Password")
+                        .frame(width: 150)
+                    TextField("Password", text: $password)
+                        .padding()
+                }
+                
+                HStack {
+                    Text("Confirm Password")
+                        .frame(width: 150)
+                        
+                    TextField("Confirm Password", text: $confirmPassword)
+                        .padding()
+                }
+                
+                Button("Register"){}
+                
             }
-            
-            HStack {
-                Text("Password")
-                    .frame(width: 150)
-                TextField("Password", text: $password)
-                    .padding()
+            .padding()
+            Button(action: {clearAllMenuItems()}) {
+                Text("Clear All Menu Items")
             }
-            
-            HStack {
-                Text("Confirm Password")
-                    .frame(width: 150)
-                    
-                TextField("Confirm Password", text: $confirmPassword)
-                    .padding()
-            }
-            
-            Button("Register"){}
-            
         }
-        .padding()
-        Button(action: {clearAllMenuItems()}) {
-            Text("Clear All Menu Items")
-        }
+
     }
     
     private func clearAllMenuItems() {

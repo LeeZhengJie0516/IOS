@@ -41,7 +41,7 @@ struct ContentView: View {
                             Text(asiacity.city)
                         }}
                 }
-                Section(header: Text("Asia")) {
+                Section(header: Text("Europe")) {
                     ForEach(EuropesearchResults, id: \.city) {europecity in
                         NavigationLink {
                             WeatherCard(cityWeather: europecity)

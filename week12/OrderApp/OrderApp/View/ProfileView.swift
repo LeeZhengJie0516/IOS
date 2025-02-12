@@ -18,6 +18,9 @@ struct ProfileView: View {
     
     var body: some View {
         VStack {
+            Image("wendys")
+                .resizable()
+                .frame(width: 180, height: 180)
             Text("Register page")
                 .font(.title)
                 .bold()
